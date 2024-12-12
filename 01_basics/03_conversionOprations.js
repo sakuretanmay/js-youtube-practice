@@ -54,3 +54,15 @@ console.log(typeof undefinedToNum); // Output: "number" - Verifies the type is n
 let nullToNum = Number(null);
 console.log(nullToNum);           // Output: 0 - null is converted to 0
 console.log(typeof nullToNum);    // Output: "number" - Verifies the type is now number
+
+
+/////////////  Operations //////////////////////////////////////////////////////////////////////////////////
+
+//Prefix and Postfix
+let x = 3;
+const y = x++;    // The value of `x` (3) is assigned to `y` first, then `x` is incremented by 1.
+console.log(`x:${x}, y:${y}`); // Output: x:4, y:3
+
+let a = 3;
+const b = ++a;   // `a` is incremented by 1 first (to 4), and then the incremented value is assigned to `b`.
+console.log(`a:${a}, b:${b}`); // Output: a:4, b:4
