@@ -36,5 +36,28 @@ const myFunction = function(){
 
 console.log(typeof myFunction); // "function"
 
-let today = new Date(); // Date object
-console.log(typeof today); // "object"
+let today = new Date();         // Date object
+console.log(typeof today);      // "object"
+
+
+//////////////////////////////////////////////////////////////////////////////////////////Stack(Primitive) and Heap(Non-Primitive) memory
+
+let myGitName = "sakureTanmay";
+let anotherGitName = myGitName;
+
+anotherGitName = "tanmaySakure";
+console.log(myGitName);
+console.log(anotherGitName);
+
+
+let userOne ={
+  name : "user",
+  email: "user@gmail.com"
+}
+
+let userTwo = userOne;
+
+userTwo.email ="user2@gmail.com";
+
+console.log(userOne.email);
+console.log(userTwo.email);
