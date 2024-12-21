@@ -1,4 +1,3 @@
-
 // String Creation
 let singleQuote = "Hello";
 let doubleQuote = "World";
@@ -52,3 +51,4 @@ console.log(specialStr);
 // He said, "JavaScript is awesome!"
 // Line1
 // Line2
+
