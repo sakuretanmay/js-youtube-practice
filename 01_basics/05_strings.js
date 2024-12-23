@@ -51,3 +51,5 @@ console.log(specialStr);
 // He said, "JavaScript is awesome!"
 // Line1
 // Line2
+// Line1
+// Line2
