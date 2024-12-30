@@ -52,4 +52,4 @@ console.log(specialStr);
 // Line1
 // Line2
 
-// String-update
+// Strings-update
