@@ -1,5 +1,5 @@
 // String Creation
-let singleQuote = "Hello";
+let singleQuote = 'Hello';
 let doubleQuote = "World";
 let templateLiteral = `Hello, ${doubleQuote}!`;
 let stringObject = new String("Hello Object");
