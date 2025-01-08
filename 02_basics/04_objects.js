@@ -56,9 +56,3 @@ console.log(instructor);
 //     "coursename": "js in hindi",
 //     "price": "free"
 // }
-
-[
-    {},
-    {},
-    {}
-]
