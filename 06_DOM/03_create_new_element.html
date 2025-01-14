@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM | chai aur code</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    
+</body>
+<script>
+    const mydiv = document.createElement('div');
+    console.log(mydiv);
+    mydiv.id= 'myID';
+    mydiv.className = 'myClass';
+    mydiv.setAttribute('title', 'generatedTitle')
+    mydiv.style.backgroundColor = 'green'
+    mydiv.style.padding ='10px'
+    mydiv.style.borderRadius ='10px'
+    // mydiv.innerText="Inserted by DOM manipulation "
+    const addText = document.createTextNode('Inserted by DOM manipulation');
+    mydiv.appendChild(addText)
+    
+    document.body.appendChild(mydiv); // Append to the body
+
+    ///////////////////////////////////////////////////// Create a button
+    const myButton = document.createElement('button');
+    myButton.id = 'myButton';
+    myButton.className = 'btn';
+    myButton.textContent = 'Click Me!';
+    myButton.style.backgroundColor = 'blue';
+    myButton.style.color = 'white';
+    myButton.style.padding = '10px 20px';
+    myButton.style.marginTop= '40px'
+    myButton.style.border = 'none';
+    myButton.style.borderRadius = '5px';
+    myButton.style.cursor = 'pointer';
+
+    // Adding an event listener
+    myButton.addEventListener('click', () => {
+        // console.log('Button Clicked!')
+        alert('Button Clicked!');
+    });
+
+    document.body.appendChild(myButton); // Append to the body
+</script>
+</html>

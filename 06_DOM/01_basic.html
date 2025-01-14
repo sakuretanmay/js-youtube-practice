@@ -23,4 +23,24 @@
         <li class="list-item">four</li>
     </ul>
 </body>
+<script>
+    // Change the text of the h1 element with id "title"
+    let titleElement = document.getElementById('title');
+    titleElement.textContent = 'Welcome to DOM Manipulation!';
+
+    // Change the background color of the body
+    document.body.style.backgroundColor = '#2d2d2d';
+
+    //  Add a new class to the h1 element
+    titleElement.classList.add('new-class');
+
+    // Select all list items and change their text color
+    let listItems = document.querySelectorAll('.list-item');
+    listItems.forEach((item) => {
+      item.style.color = 'orange';
+    });
+
+    
+
+</script>
 </html>

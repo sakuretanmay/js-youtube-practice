@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM Manipulation</title>
+</head>
+<body style="background-color: #212121; color: #fff;">
+    <ul class="language">
+        <li>javascript</li>
+    </ul>
+</body>
+<script>
+    //create new li
+    const newli = document.createElement('li');
+    newli.textContent= 'java';
+    // document.querySelector('.language').appendChild(newli);
+
+
+    //function to create new li
+    function addLanguage(langName){
+        const newli = document.createElement('li');
+        newli.innerHTML = `${langName}`;
+
+        document.querySelector('.language').appendChild(newli);
+    }
+    addLanguage('python');
+    addLanguage("typescript");
+
+    //optimise method
+    function addOptLang(langName){
+        const newli = document.createElement('li');
+        newli.appendChild(document.createTextNode(langName));
+
+        document.querySelector('.language').appendChild(newli);
+    }
+    addOptLang("cpp")
+
+    //Edit element
+    const lastLang = document.querySelector("li:last-child")
+    // lastLang.innerHTML= "DotNet";
+
+    const newlang = document.createElement('li');
+    newlang.textContent = "Mojo";
+    lastLang.replaceWith(newlang);
+
+    const firstLang = document.querySelector('li:first-child');
+    firstLang.outerHTML= '<li>JAVASCRIPT</li>'
+
+
+    //Remove element
+    const secondLang = document.querySelector('li:nth-child(2)')
+    console.log(secondLang)
+    secondLang.remove()
+</script>
+</html>
