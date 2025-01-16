@@ -6,7 +6,7 @@
 
 # Solution code
 
-## Project 1
+## Project 1 solution code
 
 ```javascript
 const buttons = document.querySelectorAll(".button");
@@ -52,7 +52,7 @@ switch (e.target.id) {
 }
 ```
 
-## Project 2
+## Project 2 solution code
 
 ```javascript
 const form = document.querySelector("form");
@@ -78,7 +78,7 @@ form.addEventListener("submit", function (e) {
 });
 ```
 
-## project 3 solution code
+## Project 3 solution code
 
 ```javascript
 const clock = document.getElementById("clock");
@@ -90,3 +90,5 @@ setInterval(function () {
   clock.innerHTML = date.toLocaleTimeString();
 }, 1000);
 ```
+
+## Project 4 solution code
