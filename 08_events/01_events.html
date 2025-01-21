@@ -18,4 +18,54 @@
         </ul>
    </div>
 </body>
+
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert("owl clicked");
+    // }
+
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log(e);
+    // })
+
+    // imp events - 
+    // type, timestamp, defaultPrevent,
+    //  target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, screenY  - interview
+    // altkey, ctrlkey, shirfkey, keyCode
+
+
+    // Event propagation - ( event bubbling and event capturing)
+
+    // document.getElementById('images').addEventListener('click', function(e){
+    //     console.log("Clicked inside ul");
+    // }, false)
+    // document.getElementById('owl').addEventListener('click', function(e){
+    //     console.log("owl clicked ");
+    //     e.stopPropagation()
+    // }, false)
+
+    // document.getElementById('google').addEventListener('click', function(e){
+    //     console.log("google clicked ");
+    //     e.preventDefault();
+    //     e.stopPropagation()
+    // }, false)
+
+    //remove image when clicked
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        // console.log(e.target.parentNode);
+        // let removeIt = e.target.parentNode;
+
+        console.log(e.target.tagName);
+        if(e.target.tagName ==='IMG'){
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+            // alert(`${e.target.id} image removed`)
+        }
+    })
+
+
+
+</script>
 </html>
