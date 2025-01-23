@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Project</title>
+    <style>
+        body {
+          font-family: Arial, sans-serif;
+          text-align: center;
+          background-color: #f5f5f5;
+          margin: 0;
+          padding: 20px;
+        }
+  
+        h1 {
+          color: #333;
+          font-size: 2rem;
+        }
+  
+        /* Button Styling */
+        button {
+          background-color: #429acb;
+          color: white;
+          font-size: 1rem;
+          padding: 10px 20px;
+          border: none;
+          border-radius: 5px;
+          cursor: pointer;
+          margin: 10px;
+          transition: background-color 0.3s ease;
+        }
+  
+        button:hover {
+          background-color: #357aa5;
+        }
+  
+        button:active {
+          transform: scale(0.95);
+        }
+  
+        #randomQuote {
+          background-color: #fff;
+          padding: 20px;
+          border-radius: 10px;
+          box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+          margin: 20px auto;
+          max-width: 600px;
+          font-size: 1.2rem;
+          color: #555;
+          line-height: 1.5;
+          font-style: italic;
+        }
+      </style>
+  </head>
+  <body>
+    <h1>Click for Random Quotes</h1>
+    <button id="start">Start</button>
+    <button id="stop">Stop</button>
+    <div id="randomQuote" style="margin-top: 30px"></div>
+  </body>
+  <script>
+    const quotes = [
+      '"The only way to do great work is to love what you do." - Steve Jobs',
+      '"Success is not the key to happiness. Happiness is the key to success." - Albert Schweitzer',
+      '"Don’t watch the clock; do what it does. Keep going." - Sam Levenson',
+      '"The harder you work for something, the greater you’ll feel when you achieve it." - Unknown',
+      '"Success usually comes to those who are too busy to be looking for it." - Henry David Thoreau',
+      '"The future depends on what you do today." - Mahatma Gandhi',
+      '"Dream big and dare to fail." - Norman Vaughan',
+      '"Opportunities don’t happen, you create them." - Chris Grosser',
+      '"It always seems impossible until it’s done." - Nelson Mandela',
+      '"Your time is limited, so don’t waste it living someone else’s life." - Steve Jobs',
+    ];
+
+    let intervalId;
+
+    const generateQuotes = function () {
+      // Display a random quote immediately
+      const randomIndex = Math.floor(Math.random() * quotes.length);
+      document.getElementById("randomQuote").innerHTML = quotes[randomIndex];
+
+      if (!intervalId) {
+        intervalId = setInterval(() => {
+          const randomIndex = Math.floor(Math.random() * quotes.length);
+          document.getElementById("randomQuote").innerHTML =
+            quotes[randomIndex];
+        }, 4000);
+      }
+    };
+
+    const stopGenerating = function () {
+      clearInterval(intervalId);
+      intervalId = null;
+    };
+
+    document.getElementById("start").addEventListener("click", generateQuotes);
+
+    document.getElementById("stop").addEventListener("click", stopGenerating);
+  </script>
+</html>
