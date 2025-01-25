@@ -104,5 +104,3 @@ fetch("https://api.github.com/users/hiteshchoudhary")
   .catch((err) => {
     console.log(err);
   });
-
-  
