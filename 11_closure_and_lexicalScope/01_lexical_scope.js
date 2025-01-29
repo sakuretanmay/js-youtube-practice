@@ -1,1 +1,1 @@
-console.log("lexical scope");
+console.log("lexical_scope");
