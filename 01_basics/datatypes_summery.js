@@ -28,17 +28,16 @@ let person = {
 console.log(typeof person); // "object"
 
 let fruits = ["apple", "banana", "cherry"]; // array (type is still "object")
-console.log(typeof fruits);                 // "object"
+console.log(typeof fruits); // "object"
 
-const myFunction = function(){
-    console.log("Hello world");
-}
+const myFunction = function () {
+  console.log("Hello world");
+};
 
 console.log(typeof myFunction); // "function"
 
-let today = new Date();         // Date object
-console.log(typeof today);      // "object"
-
+let today = new Date(); // Date object
+console.log(typeof today); // "object"
 
 //////////////////////////////////////////////////////////////////////////////////////////Stack(Primitive) and Heap(Non-Primitive) memory
 
@@ -49,15 +48,14 @@ anotherGitName = "tanmaySakure";
 console.log(myGitName);
 console.log(anotherGitName);
 
-
-let userOne ={
-  name : "user",
-  email: "user@gmail.com"
-}
+let userOne = {
+  name: "user",
+  email: "user@gmail.com",
+};
 
 let userTwo = userOne;
 
-userTwo.email ="user2@gmail.com";
+userTwo.email = "user2@gmail.com";
 
 console.log(userOne.email);
 console.log(userTwo.email);
