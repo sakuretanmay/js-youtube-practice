@@ -8,6 +8,7 @@ function outer() {
   function inner() {
     console.log(name);
   }
+
   return inner;
 }
 
