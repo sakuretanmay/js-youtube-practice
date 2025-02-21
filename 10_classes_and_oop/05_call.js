@@ -13,4 +13,4 @@ function createUser(username, email, password) {
 const chai = new createUser("tim", "tim@g.com", "123535");
 console.log(chai);
 
-//Calls a method of an object, substituting another object for the current object.
+//Call is a method of an object, substituting another object for the current object.
