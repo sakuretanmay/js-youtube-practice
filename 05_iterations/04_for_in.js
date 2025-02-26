@@ -15,5 +15,3 @@ for (const key in myArray) {
     // console.log(key)
     console.log(myArray[key])
 }
-
-//commit
