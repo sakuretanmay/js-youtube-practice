@@ -5,7 +5,7 @@ const myObj = {
 }
 
 for (const key in myObj) {
-//    console.log(key);
+    //    console.log(key);
     // console.log(key, myObj[key])
 }
 
