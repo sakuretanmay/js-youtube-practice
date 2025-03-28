@@ -10,6 +10,7 @@ coding.forEach((item) => {
 
 function printMe(item) {
   // console.log("Printing the item:", item)
+  
 }
 
 coding.forEach(printMe);
